@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by dujiang on 2016/4/21.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:com/springinaction/springidol/spring-idol.xml"})
+@ContextConfiguration({"classpath:com/springinaction/springidol/spring-idol-props.xml"})
 public class IdolTest {
     @BeforeClass
     public static void setup(){
@@ -25,7 +25,7 @@ public class IdolTest {
     public void doDuke() throws PerformanceExecption {
 //        Performer performer = (Performer) applicationContext.getBean("duke");//poeticJuggler1
 //        Performer performer = (Performer) applicationContext.getBean("poeticJuggler2");//
-        Performer performer = (Performer) applicationContext.getBean("kenny2");//
+        Performer performer = (Performer) applicationContext.getBean("oneManBand3");//
         performer.perform();
 
     }
