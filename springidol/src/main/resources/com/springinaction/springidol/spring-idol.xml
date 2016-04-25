@@ -34,8 +34,19 @@
 
     <bean class="com.springinaction.springidol.Instrumentalist" id="kenny2">
         <property name="song" value="jingle bells"/>
-        <property name="age" value="37"/>
-        <property name="instrument" ref="saxophone"/>
+        <property name="instrument" value="#{saxophone}"/>
+    </bean>
+    <bean class="com.springinaction.springidol.Instrumentalist" id="carl">
+        <property name="song" value="#{songSelector.selectSong()?.toUpperCase()}"/>
+    </bean>
+    <bean class="com.springinaction.springidol.SongSelector" id="songSelector">
+        <!--<property name="song" value="#{kenny2.song!=null ? kenny.song:'Greensleeves'}"/>-->
+        <property name="song" value="#{kenny2.song ?: 'Greensleeves'}"/>
+    </bean>
+    <bean class="com.springinaction.springidol.Song" id="song">
+        <constructor-arg index="0" value="title"/>
+        <constructor-arg index="1" value="composer"/>
+        <constructor-arg index="2" value="lyrics"/>
     </bean>
     <!-- Inner Bean-->
     <bean class="com.springinaction.springidol.Instrumentalist" id="kenny">
@@ -44,6 +55,7 @@
         <property name="instrument"><!-- Inner Bean-->
             <bean class="com.springinaction.springidol.Saxophone"/>
         </property>
+        <property name="email" value="#{admin.email matches '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.com'}"/>
     </bean>
     <bean class="com.springinaction.springidol.Piano" id="piano"/>
 </beans>

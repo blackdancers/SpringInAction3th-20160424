@@ -16,6 +16,11 @@ public class Instrumentalist implements Performer{
     private int age;//年龄
     private String song;//歌曲
     private Instrument instrument;//乐器
+    private String email;
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public void setSong(String song) {//注入歌曲
         this.song = song;
