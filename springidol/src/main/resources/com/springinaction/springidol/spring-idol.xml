@@ -6,7 +6,7 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--<start id="duke_bean" />-->
-    <bean id="duke" class="com.springinaction.springidol.Juggler">
+    <bean id="duke" class="com.springinaction.com.springinaction.springidol.Juggler">
         <constructor-arg value="15"/>
     </bean>
     <bean class="com.springinaction.springidol.PoeticJuggler" id="poeticJuggler1">
@@ -26,17 +26,17 @@
     <!--<end id="duke_bean" />-->
 
     <bean class="com.springinaction.springidol.Stage" id="theStage" factory-method="getInstance"/>
-    <bean class="com.springinaction.springidol.Instrumentalist" id="kenny1">
+    <bean class="com.springinaction.com.springinaction.springidol.Instrumentalist" id="kenny1">
         <property name="song" value="jingle bells"/>
         <property name="age" value="37"/>
     </bean>
-    <bean class="com.springinaction.springidol.Saxophone" id="saxophone"/>
+    <bean class="com.springinaction.com.springinaction.springidol.Saxophone" id="saxophone"/>
 
-    <bean class="com.springinaction.springidol.Instrumentalist" id="kenny2">
+    <bean class="com.springinaction.com.springinaction.springidol.Instrumentalist" id="kenny2">
         <property name="song" value="jingle bells"/>
         <property name="instrument" value="#{saxophone}"/>
     </bean>
-    <bean class="com.springinaction.springidol.Instrumentalist" id="carl">
+    <bean class="com.springinaction.com.springinaction.springidol.Instrumentalist" id="carl">
         <property name="song" value="#{songSelector.selectSong()?.toUpperCase()}"/>
     </bean>
     <bean class="com.springinaction.springidol.SongSelector" id="songSelector">
@@ -49,15 +49,15 @@
         <constructor-arg index="2" value="lyrics"/>
     </bean>
     <!-- Inner Bean-->
-    <bean class="com.springinaction.springidol.Instrumentalist" id="kenny">
+    <bean class="com.springinaction.com.springinaction.springidol.Instrumentalist" id="kenny">
         <property name="song" value="jingle bells"/>
         <property name="age" value="37"/>
         <property name="instrument"><!-- Inner Bean-->
-            <bean class="com.springinaction.springidol.Saxophone"/>
+            <bean class="com.springinaction.com.springinaction.springidol.Saxophone"/>
         </property>
         <property name="email" value="#{admin.email matches '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.com'}"/>
     </bean>
-    <bean class="com.springinaction.springidol.Piano" id="piano"/>
+    <bean class="com.springinaction.com.springinaction.springidol.Piano" id="piano"/>
 </beans>
 
 

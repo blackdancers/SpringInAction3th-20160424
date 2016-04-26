@@ -5,11 +5,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="kenny" class="com.springinaction.springidol.Instrumentalist"
+    <bean id="kenny" class="com.springinaction.com.springinaction.springidol.Instrumentalist"
           p:song="Jingle Bells"
           p:age="34"
           p:instrument-ref="saxophone"/>
-    <bean id="saxophone" class="com.springinaction.springidol.Saxophone"/>
+    <bean id="saxophone" class="com.springinaction.com.springinaction.springidol.Saxophone"/>
 </beans>
 
 

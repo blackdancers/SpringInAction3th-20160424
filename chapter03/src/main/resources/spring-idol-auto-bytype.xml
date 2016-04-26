@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.springinaction.springidol.Instrumentalist" id="kenny" autowire="byType">
+        <property name="song" value="Jingle Bells"/>
+    </bean>
+    <bean id="saxophone" class="com.springinaction.springidol.Saxophone"/>
+    <bean class="com.springinaction.springidol.Guitar" id="guitar" primary="false" autowire-candidate="false"/>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

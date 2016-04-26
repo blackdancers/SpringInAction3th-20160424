@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="kenny" class="com.springinaction.springidol.OneManBand">
+    <bean id="kenny" class="com.springinaction.com.springinaction.springidol.OneManBand">
         <property name="instruments">
             <list>
                 <ref bean="guitar"/>
@@ -13,7 +13,7 @@
             </list>
         </property>
     </bean>
-    <bean id="hank" class="com.springinaction.springidol.OneManBand">
+    <bean id="hank" class="com.springinaction.com.springinaction.springidol.OneManBand">
         <property name="instruments">
             <set>
                 <ref bean="guitar"/>
@@ -22,9 +22,9 @@
             </set>
         </property>
     </bean>
-    <bean class="com.springinaction.springidol.Harmonica" id="harmonica"/>
-    <bean class="com.springinaction.springidol.Cymbal" id="cymbal"/>
-    <bean class="com.springinaction.springidol.Guitar" id="guitar"/>
+    <bean class="com.springinaction.com.springinaction.springidol.Harmonica" id="harmonica"/>
+    <bean class="com.springinaction.com.springinaction.springidol.Cymbal" id="cymbal"/>
+    <bean class="com.springinaction.com.springinaction.springidol.Guitar" id="guitar"/>
 </beans>
 
 

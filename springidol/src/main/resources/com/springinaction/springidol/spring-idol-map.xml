@@ -14,9 +14,9 @@
             </map>
         </property>
     </bean>
-    <bean class="com.springinaction.springidol.Harmonica" id="harmonica"/>
-    <bean class="com.springinaction.springidol.Cymbal" id="cymbal"/>
-    <bean class="com.springinaction.springidol.Guitar" id="guitar"/>
+    <bean class="com.springinaction.com.springinaction.springidol.Harmonica" id="harmonica"/>
+    <bean class="com.springinaction.com.springinaction.springidol.Cymbal" id="cymbal"/>
+    <bean class="com.springinaction.com.springinaction.springidol.Guitar" id="guitar"/>
 </beans>
 
 
