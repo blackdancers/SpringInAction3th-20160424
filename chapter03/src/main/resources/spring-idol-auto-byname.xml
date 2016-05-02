@@ -10,7 +10,7 @@
         <!-- 自动装配 autowire="byName"-->
     </bean>
 
-    <bean id="saxophone" class="com.springinaction.springidol.Saxophone"/>
+    <!--<bean id="saxophone" class="com.springinaction.springidol.Saxophone"/>-->
     <!-- 显示装配-->
     <bean id="instrument" class="com.springinaction.springidol.Saxophone"/><!-- 自动装配 autowire="byName"-->
 </beans>
