@@ -4,11 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="com.springinaction.springidol.Instrumentalist" id="kenny" autowire="byType">
+    <bean class="com.springinaction.springidol.Instrumentalist" id="kenny">
         <property name="song" value="Jingle Bells"/>
     </bean>
-    <bean id="saxophone" class="com.springinaction.springidol.Saxophone"/>
+    <bean id="saxophone" class="com.springinaction.springidol.Saxophone" primary="false" autowire-candidate="false"/>
     <bean class="com.springinaction.springidol.Guitar" id="guitar" primary="false" autowire-candidate="false"/>
+    <bean class="com.springinaction.springidol.Juggler" autowire="constructor"/>
 </beans>
 
 
