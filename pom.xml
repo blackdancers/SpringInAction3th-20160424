@@ -12,6 +12,7 @@
         <module>knights</module>
         <module>springidol</module>
         <module>chapter03</module>
+        <module>chapter03-02</module>
     </modules>
     <properties>
         <spring.group>org.springframework</spring.group>
