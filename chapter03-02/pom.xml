@@ -11,6 +11,14 @@
 
     <groupId>com.springinaction3-chapter03</groupId>
     <artifactId>chapter03-02</artifactId>
+    <dependencies>
+        <!-- http://mvnrepository.com/artifact/javax.inject/javax.inject -->
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
 
+    </dependencies>
 
 </project>

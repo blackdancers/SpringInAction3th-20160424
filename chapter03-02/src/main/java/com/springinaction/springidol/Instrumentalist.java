@@ -2,17 +2,25 @@ package com.springinaction.springidol;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import javax.inject.Inject;
+import javax.inject.Named;
 
 /**
  * 乐器演奏家
  * Created by dujiang on 2016/4/23.
  */
+@Component("eddie")
 public class Instrumentalist implements Performer {
 
     public Instrumentalist() {
 
     }
 
+    @Value("Eruption")
+    private String song;
     /**
      * 构造方法
      * @param instrument
@@ -30,7 +38,13 @@ public class Instrumentalist implements Performer {
     /**
      * 属性
      */
-    @Autowired(required = false)
+    //@Autowired(required = false)
+    //@Qualifier("guitar")
+//    @Autowired
+//    @Strummed
+//    @StringedInstrument
+    @Inject
+    @Named("guitar")
     private Instrument instrument;//乐器
 
     @Autowired

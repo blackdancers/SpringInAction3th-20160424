@@ -5,13 +5,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--启用注解装配-->
-    <context:annotation-config/>
 
-    <bean class="com.springinaction.springidol.Guitar">
-        <qualifier value="stringed"/>
-    </bean>
-
+    <!--<context:component-scan base-package="com.springinaction.springidol"/>-->
+    <context:component-scan base-package="com.springinaction.springidol">
+        <context:include-filter type="assignable" expression="com.springinaction.springidol.Instrument"/>
+        <!--排除@Strummed注解的类-->
+        <context:exclude-filter type="annotation" expression="com.springinaction.springidol.Strummed"/>
+    </context:component-scan>
 </beans>
 
 
