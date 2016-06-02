@@ -19,6 +19,14 @@ public class Instrumentalist implements Performer {
 
     }
 
+    public String getSong() {
+        return song;
+    }
+
+    public void setSong(String song) {
+        this.song = song;
+    }
+
     @Value("Eruption")
     private String song;
     /**
