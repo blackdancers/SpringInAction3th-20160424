@@ -13,6 +13,7 @@
         <module>springidol</module>
         <module>chapter03</module>
         <module>chapter03-02</module>
+        <module>chapter04-01</module>
     </modules>
     <properties>
         <spring.group>org.springframework</spring.group>
