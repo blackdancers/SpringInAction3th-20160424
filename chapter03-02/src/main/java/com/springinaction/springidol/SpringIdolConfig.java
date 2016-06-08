@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Configuration×¢½â»á×÷ÎªÒ»¸ö±êÊ¶¸æÖªSpring£ºÕâ¸öÀà½«°üº¬Ò»¸ö»ò¶à¸öSpring BeanµÄ¶¨Òå¡£
+ * @Configurationæ³¨è§£ä¼šä½œä¸ºä¸€ä¸ªæ ‡è¯†å‘ŠçŸ¥Springï¼šè¿™ä¸ªç±»å°†åŒ…å«ä¸€ä¸ªæˆ–å¤šä¸ªSpring Beançš„å®šä¹‰ã€‚
  */
 @Configuration
 public class SpringIdolConfig {
